@@ -67,7 +67,7 @@ Rails.application.configure do
 
   # Required for Devise
   # https://github.com/heartcombo/devise
-  config.action_mailer.default_url_options = { host: Rails.application.credentials.domains[:production] }
+  config.action_mailer.default_url_options = { host: 'speakeros.com' }
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
