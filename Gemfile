@@ -32,6 +32,10 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise_token_auth'
 gem 'omniauth'
 
+# mqtt services for speaker-os
+# gem 'mqtt'
+gem 'ably'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

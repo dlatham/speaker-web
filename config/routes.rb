@@ -11,6 +11,13 @@ Rails.application.routes.draw do
 				}
 			end
 			get :ping, to: 'application#ping'
+			resources :devices, only: [:show]
+		end
+	end
+
+	namespace :devices, defaults: {format: :json} do
+		namespace :v1 do
+			resources :tokens, only: [:create]
 		end
 	end
 
